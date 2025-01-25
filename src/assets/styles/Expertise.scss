@@ -1,0 +1,157 @@
+// .skills-container {
+//     padding: 15% 10%;
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+   
+
+//     svg {
+//         color: white;
+//     }
+// }
+  
+// .skills-container .skills-grid {
+//     display: inline;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 50px;
+// }
+  
+// .skills-container .skills-grid .skill {
+//     align-items: center;
+//     text-align: left;
+// }
+  
+// .chip {
+//     color: rgb(39, 40, 34) !important;
+//     background-color: white !important;
+//     font-size: 0.8rem !important;
+//     height: 25px !important;
+  
+//     span {
+//         font-family: 'Courier Prime', monospace;
+//         color: rgb(39, 40, 34);
+//     }
+  
+//     svg {
+//         height: 15px !important;
+//     }
+// }
+
+// .flex-chips {
+//     line-height: 2;
+//     margin: 0.5;
+
+//     .chip-title {
+//         color: white;
+//         padding-right: 10px;
+//     }
+// }
+
+// .flex-chips .MuiChip-root {
+//     margin-right: 0.5em;
+// }
+
+// .introduction p {
+//     text-align: justify; /* Aligns text equally on the left and right */
+//     line-height: 1.8; /* Increases spacing between lines for readability */
+//     font-size: 1.1rem; /* Adjust font size */
+//     margin: 0 auto; /* Centers the paragraph block */
+//     max-width: 1200px; /* Optionally restricts the width */
+// }
+// .flex-chips .MuiChip-outlined {
+//     background-color: #e0e0e0;
+//     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+//         monospace;
+// }
+
+// .flex-chips .MuiChip-outlined span {
+//     color: rgb(39, 40, 34);
+// }
+
+// @media screen {
+//     @media (max-width: 768px) {
+//         .skills-container {
+//             display: block;
+//             padding-left: 5%;
+//             padding-right: 5%;
+//         }
+    
+//         .skills-container .skills-grid {
+//             display: initial;
+//         }
+        
+//         .skills-container .skills-grid .skill {
+//             padding-bottom: 5%;
+//         }
+//     }
+
+//     @media (max-width: 567px) {
+//         .skills {
+//             font-size: 12px;
+//         }
+//     }
+// }
+
+
+
+
+.expertise-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem -6rem;
+    margin-top: -1rem;
+
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff; // White background for this section
+        padding: 2rem;
+        border-radius: -6px; // Rounded corners
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        gap: 2rem;
+        width: 100%;
+        max-width: 1900px;
+
+        @media (max-width: 1068px) {
+            flex-direction: column; // Stacks items for smaller screens
+            padding: 1.5rem;
+        }
+    }
+
+    .text-content {
+        flex: 1;
+        max-width: 600px;
+        margin: 41px 13px;
+        h1 {
+            font-size: 2rem;
+            color: #080808; // Consistent dark text color
+            margin-bottom: 1rem;
+            //text-shadow: 0 0 10px #232024, 0 0 20px #232024,0 0 30px #232024, 0 0 40px #232024;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+    }
+
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+       
+        .profile-picture {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%; // Circular image
+            object-fit: cover; // Ensures the image fits perfectly
+            border: 5px solid #5000ca; // Subtle border
+            box-shadow: 0px 0px 4px 8px #5000ca(0, 0, 0, 0.2); // Adds depth
+        }
+    }
+}

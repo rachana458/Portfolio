@@ -1,0 +1,82 @@
+ .vertical-timeline span {
+     color: white;
+     font-family: 'Courier Prime', monospace;
+ }
+
+ .vertical-timeline p {
+     color: rgb(39, 40, 34);
+ }
+
+ .vertical-timeline-element p {
+     color: rgb(39, 40, 34);
+ }
+
+ .vertical-timeline-element h3 {
+     color: rgb(39, 40, 34);
+ }
+
+ .vertical-timeline-element h4 {
+     color: rgb(39, 40, 34);
+ }
+
+ .vertical-timeline-element span {
+     color: rgb(39, 40, 34);
+ }
+
+ .vertical-timeline-element .vertical-timeline-element-date {
+     color: white;
+ }
+ .svg-inline--fa {
+     color: white;
+ }
+
+ @media screen and (max-width: 1170px) {
+     .vertical-timeline-element .vertical-timeline-element-date {
+         color: rgb(39, 40, 34);
+     }
+ }
+
+ .items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center only title and toggle buttons */
+}
+
+h1 {
+  text-align: center; /* Center-align the title text */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  //color: #fbfbfb;
+}
+
+
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+
+  .toggle-button {
+    background: #fefdfd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: 'Courier Prime', monospace;
+    color: #5000ca;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #5000ca;
+      color: white;
+    }
+
+    &.active {
+      background: #5000ca;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}

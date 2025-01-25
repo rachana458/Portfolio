@@ -1,0 +1,145 @@
+// .contact_wrapper svg {
+//   font-size: 1em;
+//   vertical-align: middle;
+//   margin-right: 5px;
+// }
+
+// .contact-form {
+//   padding-top: 20px;
+
+//   button {
+//     float: right;
+//     background-color: white;
+//     color: #050f0b;
+//   }
+
+//   button:hover {
+//     background-color: #5000ca;
+//     color: white;
+//   }
+
+//   fieldset {
+//     background-color: white;
+//   }
+// }
+
+// label {
+//   font-size: 1.2rem;
+//   font-family: 'DomaineDispNar-Medium', sans-serif;
+// }
+
+// .form-flex {
+//   display: flex;
+//   gap: 15px;
+//   padding-bottom: 15px;
+// }
+
+// .form-flex .MuiFormControl-root {
+//   width: 100%;
+// }
+
+// form {
+//   width: 100% !important;
+// }
+
+// .body-form {
+//   width: 100% !important;
+//   margin-bottom: 15px !important;
+// }
+
+#contact {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1; /* Ensure the contact section stays on top */
+  margin-top: 50px; /* Add margin to separate from the top of the page */
+  background-color: transparent; /* No background color, to prevent layering issue */
+
+  .items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2; /* Ensure it stays above background */
+    position: relative;
+  }
+
+  .contact_wrapper {
+    max-width: 1400px;
+    background: white; /* Theme-based background */
+    padding: 10rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(5, 5, 5, 0.1);
+    z-index: 3; /* Keep the content wrapper above other content */
+    position: relative;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    color: rgb(8, 8, 8);
+    margin-block-start: -109px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+
+  .contact-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 4; /* Ensure the hover boxes are on top */
+    position: relative;
+    width: 100%;
+    margin: -60px 13px;
+  }
+
+  .hover-box {
+    width: 450px;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Keeps them in the same stacking context */
+    z-index: 5; /* Keep hover boxes above everything */
+  }
+
+  .email-box {
+    background-color: #f2f8ff; /* Light blue background for email box */
+  }
+
+  .linkedin-box {
+    background-color: #e8f5e9; /* Light green background for LinkedIn box */
+  }
+
+  .hover-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-text);
+  }
+
+  p {
+    color: var(--secondary-text);
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
